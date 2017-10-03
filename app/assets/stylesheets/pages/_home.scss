@@ -1,1 +1,397 @@
 // Specific CSS for your home-page
+/* -------------------------------------
+ * CSS code specific to home page
+ * (margin/padding adjustments)
+ * ------------------------------------- */
+.no-padding {
+    padding-right:0;
+    padding-left:0;
+}
+
+.blue-col-1 {
+  background-color: $blue;
+  min-height: 700px;
+  overflow: scroll;
+}
+
+.blue-col {
+  background-color: $blue;
+  min-height: 500px;
+  overflow: scroll;
+}
+
+.green-col {
+  background-color: $green;
+  height: 700px;
+}
+
+.white-col {
+  background-color: white;
+  // background-image: url('images/bulle-1.png');
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.white-col-1 {
+  background-color: white;
+  height: 700px;
+  overflow: scroll;
+}
+
+.project-col {
+  height: 700px;
+  overflow: scroll;
+}
+
+.nav-link-page {
+  color: white;
+  font-size: 15px;
+  padding: 15px;
+}
+
+.nav-link-page:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.presentation{
+  padding-top: 0px;
+  padding-bottom: 70px;
+  padding-left: 50px;
+  display: block;
+  width: 450px;
+  font-size: 70px;
+  text-align: left;
+  h1 {
+    font-family: $body-font;
+    font-weight: 300;
+    color: $yellow;
+  }
+  h3 {
+    font-family: open sans;
+    color: $yellow;
+    margin: 0;
+    font-weight: 300;
+  }
+}
+
+.presentation .colored {
+  color: $green;
+  font-size: 75px;
+  font-family: $headers-font;
+  font-weight: 500;
+}
+
+
+.services {
+  padding-bottom: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+  h1 {
+    font-size: 18px;
+    font-family: $headers-font;
+    color: $blue;
+    text-align: justify;
+  }
+}
+
+.icon-padding {
+  padding-top: 80px;
+}
+
+.icon {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 100px;
+  // position: relative;
+  img {
+    width: 100px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    position: absolute;
+    left: 0;
+    bottom: 100;
+  }
+}
+
+.icon img:hover {
+  transform: translateX(100px);
+}
+
+.sweep-icon {
+  height: 100px;
+  margin-left: 50px;
+}
+
+.sweep-text {
+  color: $green;
+  padding-right: 0;
+  margin-left: 50px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.sweep-text .stressedout {
+  color: $blue;
+  font-size: 18px;
+  // font-weight: semibold;
+}
+
+
+.tour-bulle {
+    padding-top: 200px;
+  h2 {
+    color: white;
+    font-family: $headers-font;
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+.project-wrapper {
+  // height: 800px;
+  // background-color: $blue;
+  // padding-bottom: 200px;
+}
+
+
+.card {
+  height: 300px;
+  margin: auto;
+  // position: relative;
+}
+
+.card:hover .overlay-yellow {
+  opacity: 0.9;
+}
+
+.overlay-yellow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $yellow;
+}
+
+.contact {
+  margin-top: 100px;
+  h2 {
+    color: white;
+    font-family: $headers-font;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0;
+  }
+}
+
+.contact-info {
+  padding-top: 150px;
+  h3, h4 {
+    color: $green;
+    font-weight: 400;
+  }
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  bottom: -250px;
+  -webkit-animation: square 20s infinite;
+  animation: square 20s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.bubbles li:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+  border-radius: 50%;
+  background-color: $yellow;
+}
+
+.bubbles li:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  border-radius: 50%;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 17s;
+  animation-duration: 17s;
+  background-color: $green;
+}
+
+.bubbles li:nth-child(3) {
+  width: 10px;
+  height: 10px;
+  left: 46%;
+  border-radius: 50%;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-duration: 13s;
+  animation-duration: 13s;
+  background-color: $blue;
+}
+
+.bubbles li:nth-child(4) {
+  width: 25px;
+  height: 25px;
+  left: 80%;
+  border-radius: 50%;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  background-color:$yellow;
+}
+
+.bubbles li:nth-child(5) {
+  width: 15px;
+  height: 15px;
+  left: 10%;
+  border-radius: 50%;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  background-color: $blue;
+}
+
+.bubbles li:nth-child(6) {
+  width: 35px;
+  height: 35px;
+  left: 75%;
+  border-radius: 50%;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  background-color: $green;
+}
+
+.bubbles li:nth-child(7) {
+  width: 55px;
+  height: 55px;
+  left: 65%;
+  border-radius: 50%;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  background-color: $yellow;
+}
+
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-600px);
+    transform: translateY(-600px);
+  }
+}
+
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-600px);
+    transform: translateY(-600px);
+  }
+}
+
+#top-head {
+  position: absolute;
+  top: 240px;
+}
+
+.soretec {
+  // background-color: #0a90c9;
+  background-image: url('http://res.cloudinary.com/dusxpvpz7/image/upload/v1499786472/Soretec-fondphoto_xhanuq.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  // margin: 5px;
+}
+
+.archil{
+  // background-color: #e71d71;
+  background-image: url('http://res.cloudinary.com/dusxpvpz7/image/upload/v1499786552/archil-enscene_l0tstc.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  // margin: 5px;
+}
+
+.ose {
+  // background-color: black;
+  background-image: url('http://res.cloudinary.com/dusxpvpz7/image/upload/v1499786507/ose-enscene_kezjhn.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  // margin: 5px;
+}
+
+.dmum {
+  // background-color: #eff5ff;
+  background-image: url('http://res.cloudinary.com/dusxpvpz7/image/upload/v1499788925/dmum-enscene_gnujv3.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  // margin: 5px;
+}
+
+.fermepc {
+  background-image: url('http://res.cloudinary.com/dusxpvpz7/image/upload/v1499787200/fermepc-enscene_ytdjrw.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+
+.pelemele {
+  background-image: url("http://res.cloudinary.com/dusxpvpz7/image/upload/v1501489891/pelemele-enscene_ndypm1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
