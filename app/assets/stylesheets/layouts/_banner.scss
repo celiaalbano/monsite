@@ -13,6 +13,7 @@
   // padding-top: 80px;
 }
 
+
 .icone1 {
   padding-top: 50px;
   padding-left: 500px;
@@ -39,19 +40,12 @@
   overflow: hidden;
 }
 
-// .banner-content {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100vh;
-// }
-
 .logo img {
   max-width: 200px;
   margin-right: 50px;
 }
 
 h1 {
-  font-family: cooper hewitt, palanquin dark;
+  font-family: $headers-font;
 }
 

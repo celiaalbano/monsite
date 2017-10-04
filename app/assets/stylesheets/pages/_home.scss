@@ -3,6 +3,7 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
 .no-padding {
     padding-right:0;
     padding-left:0;
@@ -27,7 +28,6 @@
 
 .white-col {
   background-color: white;
-  // background-image: url('images/bulle-1.png');
   height: 500px;
   overflow: hidden;
   position: relative;
@@ -107,8 +107,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // height: 100px;
-  // position: relative;
   img {
     width: 100px;
     transition-property: transform;
@@ -153,17 +151,10 @@
     font-weight: 300;
   }
 }
-.project-wrapper {
-  // height: 800px;
-  // background-color: $blue;
-  // padding-bottom: 200px;
-}
-
 
 .card {
   height: 300px;
   margin: auto;
-  // position: relative;
 }
 
 .card:hover .overlay-yellow {
@@ -347,39 +338,31 @@
 }
 
 .soretec {
-  // background-color: #0a90c9;
   background-image: url('http://res.cloudinary.com/dusxpvpz7/image/upload/v1499786472/Soretec-fondphoto_xhanuq.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
-  // margin: 5px;
 }
 
 .archil{
-  // background-color: #e71d71;
   background-image: url('http://res.cloudinary.com/dusxpvpz7/image/upload/v1499786552/archil-enscene_l0tstc.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
-  // margin: 5px;
 }
 
 .ose {
-  // background-color: black;
   background-image: url('http://res.cloudinary.com/dusxpvpz7/image/upload/v1499786507/ose-enscene_kezjhn.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
-  // margin: 5px;
 }
 
 .dmum {
-  // background-color: #eff5ff;
   background-image: url('http://res.cloudinary.com/dusxpvpz7/image/upload/v1499788925/dmum-enscene_gnujv3.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
-  // margin: 5px;
 }
 
 .fermepc {
