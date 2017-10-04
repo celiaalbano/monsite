@@ -9,7 +9,11 @@ $headers-font: "Cooper-Hewitt", "Palanquin", "Helvetica", "sans-serif";
 @font-face {
   font-family: "Cooper-Hewitt";
   src: font-url('cooper-hewitt-book/CooperHewitt-Book.woff') format('woff'),
-
 }
 
-$my-font: "Cooper-Hewitt", "Palanquin", "Helvetica", "sans-serif";
+@font-face {
+  font-family: "Cooper-Hewitt-Light";
+  src: font-url('cooper-hewitt-book/CooperHewitt-Light.woff') format('woff'),
+}
+
+$my-font: "Cooper-Hewitt-Light", "Palanquin", "Helvetica", "sans-serif";

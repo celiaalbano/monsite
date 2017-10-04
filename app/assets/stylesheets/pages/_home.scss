@@ -80,7 +80,7 @@
 .presentation .colored {
   color: $green;
   font-size: 75px;
-  font-family: $headers-font;
+  font-family: $my-font;
   font-weight: 500;
 }
 
@@ -189,7 +189,7 @@
   padding-top: 150px;
   h3, h4 {
     color: $green;
-    font-weight: 400;
+    font-family: $my-font;
   }
 }
 
